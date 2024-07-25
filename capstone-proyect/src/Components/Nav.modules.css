@@ -1,32 +1,11 @@
 .navbar {
-    background-color: #e20000;
-    padding: 10px;
-    display: inline-block;
-    justify-content: space-between;
-    align-items: center;
+    background-color: #c3e49e;
+    display: grid;
 }
 
-.navbar-brand {
-    font-size: 20px;
-    font-weight: bold;
-    color: #333;
-}
-
-.navbar-links {
+.navbar ul {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
     list-style: none;
-    display: flex;
-}
-
-.navbar-links li {
-    margin-right: 10px;
-}
-
-.navbar-links a {
-    text-decoration: none;
-    color: #333;
-    padding: 5px;
-}
-
-.navbar-links a:hover {
-    color: #666;
+    padding: 0;
 }

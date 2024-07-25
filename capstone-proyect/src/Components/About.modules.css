@@ -1,0 +1,24 @@
+.about {
+    text-align: center;
+    padding: 20px;
+    background-color: #9ec48a;
+}
+
+.about h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.about p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.about img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}

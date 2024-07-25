@@ -1,10 +1,16 @@
 import React from 'react';
+import "./Main.modules.css";
 
 function Main() {
     return (
-        <main>
-            <h1>Capstone Proyect</h1>
-            <p>Proyect for the final exam of the course</p>
+        <main className='main'>
+            <div className="maintext">
+                <h1>Little Lemon</h1>
+                <h2>Miami</h2>
+                <p>Food Description</p>
+                <button className='bookATable'>Book a table</button>
+            </div>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/07/Jacques_Lameloise_DSCF6580.jpg" alt="Food" />
         </main>
     );
 }

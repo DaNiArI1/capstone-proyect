@@ -1,10 +1,10 @@
 import React from 'react';
-import Style from "./Header.modules.css";
+import "./Header.modules.css";
 
 function Header() {
     return (
-        <header className={Style.header}>
-            <img src="https://www.ironhack.com/assets/shared/logo.svg" alt="Ironhack logo" />
+        <header className="header">
+            <img src="https://littlelemonrestaurantankitamwebsiteproject.netlify.app/static/media/Logo.370f832fad423c516d56.png" alt="Little Lemon logo" />
         </header>
     );
 }

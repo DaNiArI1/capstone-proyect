@@ -1,0 +1,25 @@
+.main {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    background-color: aquamarine;
+    padding: 3%;
+    align-items: center;
+    margin-top: 1%;
+}
+
+.maintext {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin-right: 5%;
+}
+
+.bookATable {
+    width: 15%;
+}
+
+.main img {
+    width: 32%;
+    border-radius: 5%;
+    height: auto;
+}
