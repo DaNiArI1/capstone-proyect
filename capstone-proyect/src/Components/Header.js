@@ -1,10 +1,9 @@
 import React from 'react';
-import './index.css';
-import './App.css';
+import Style from "./Header.modules.css";
 
 function Header() {
     return (
-        <header>
+        <header className={Style.header}>
             <img src="https://www.ironhack.com/assets/shared/logo.svg" alt="Ironhack logo" />
         </header>
     );
