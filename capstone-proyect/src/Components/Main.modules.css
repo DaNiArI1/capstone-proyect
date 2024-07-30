@@ -1,25 +1,39 @@
 .main {
     display: grid;
-    grid-template-columns: 1fr auto;
-    background-color: aquamarine;
-    padding: 3%;
-    align-items: center;
+    grid-template-columns: 0.7fr 1fr 1fr;
+    grid-template-rows: 1fr auto;
+    grid-template-areas: 
+    ". maintext img"
+    ". bookATable img";
+    background-color: #A3BCAA;
+    padding: 2.5%;
     margin-top: 1%;
+    align-items: center;
 }
 
 .maintext {
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-    margin-right: 5%;
+    text-align: left;
+    margin-right: 7%;
+    color: #ffffff;
+    grid-area: maintext;
 }
 
 .bookATable {
-    width: 15%;
+    width: 75%;
+    align-items: center;
+    background-color: #17a71e;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    grid-area: bookATable;
 }
 
 .main img {
-    width: 32%;
+    width: 80%;
     border-radius: 5%;
     height: auto;
+    grid-area: img;
 }

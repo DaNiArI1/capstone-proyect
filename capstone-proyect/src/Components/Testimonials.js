@@ -22,7 +22,6 @@ const Testimonials = () => {
 
     return (
         <div className='testimonials'>
-            <h2>Testimonials</h2>
             {testimonials.map((testimonial) => (
                 <div className="testimonial" key={testimonial.id}>
                     <h3>{testimonial.name}</h3>

@@ -1,8 +1,9 @@
 /* Footer styles */
 .footer {
-    background-color: #f2f2f2;
+    background-color: #B2E5D4;
     padding: 20px;
     text-align: center;
+    margin-top: 1%;
 }
 
 .footer p {
@@ -12,6 +13,10 @@
 .footer a {
     color: #333;
     text-decoration: none;
+}
+
+.footer ul {
+    list-style: none;
 }
 
 .footer a:hover {

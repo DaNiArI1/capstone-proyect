@@ -24,7 +24,6 @@ function Highlights() {
     return (
         <div className='highlight'>
             <h2>Specials</h2>
-            <button className='orderOnline'>Order online</button>
             <ul>
                 {highlights.map((highlight, index) => (
                     <li key={index}>
@@ -34,6 +33,7 @@ function Highlights() {
                     </li>
                 ))}
             </ul>
+            <button className='orderOnline'>Order online</button>
         </div>
     );
 };

@@ -1,17 +1,33 @@
 /* Highlights section */
 .highlight {
     margin: 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.3 1fr 0.3;
+    grid-template-areas:
+        ". h2 ."
+        "highlight highlight highlight"
+        ". orderOnline .";
+    justify-content: center;
+    align-items: center;
 }
 
 .highlight h2 {
-    font-size: 22px;
+    background-color: #17a71e;
+    color: #ffffff;
+    padding: 2%;
+    border-radius: 5%;
+    font-size: 30px;
     margin-bottom: 10px;
     text-align: center;
+    grid-area: h2;
 }
 
 .highlight ul {
     display: flex;
     justify-content: space-between;
+    list-style: none;
+    grid-column: highlight;
 }
 
 .highlight li {
@@ -34,4 +50,16 @@
     height: auto;
     max-height: 190px;
     margin-bottom: 10px;
+}
+
+.orderOnline {
+    background-color: #17a71e;
+    color: #ffffff;
+    margin-top: 20px;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    grid-area: orderOnline;
 }
