@@ -2,10 +2,15 @@ import React from 'react';
 import DishCount from './DishCount';
 import dishesStock from './StockDishes';
 
-function dish ({ image, name, description, price }) {
+function dish ({ image,id ,stock, name, description, price }) {
 
-  const dish = [dish, setDish] = useState(dishesStock)
-  
+  const dish = [dish, setDish] = useState([])
+
+  useEffect(() => {
+    setDish(dishesStock)
+  }, [])
+
+
   return (
     <div className="dish-card">
       <img src={dish.image} alt={dish.name} />
