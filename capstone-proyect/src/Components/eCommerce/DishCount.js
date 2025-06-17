@@ -1,25 +1,24 @@
 import React, { useState } from 'react'
-import dishesStock from './StockDishes'
 
-function DishCount() {
+function DishCount({ stock }) {
 
    const [count, setCount] = useState(0)
 
    function increase() {
-    if (count < dishesStock.stock) {
+    if (count < stock) {
       setCount(count + 1)
+    } else {
+      alert(`You can only order up to ${stock} dishes`)
     }
-    else {
-      alert('You can only order up to 10 dishes')
-    }
-    }
+   }
 
    function decrease() {
-    if (count > 0)
+    if (count > 0) {
       setCount(count - 1)
-    else
+    } else {
       alert('You must order at least 1 dish')
     }
+   }
 
     function reset() {
       setCount(0)
@@ -35,4 +34,4 @@ function DishCount() {
   )
 }
 
-export default DishCount
+export default DishCount;
