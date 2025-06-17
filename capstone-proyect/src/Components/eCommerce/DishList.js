@@ -1,12 +1,15 @@
-const dishList = dishes.map((dish) => {
-    return (
-        <div key={dish.id}>
-            <h3>{dish.name}</h3>
-            <p>Price: ${dish.price}</p>
-            <p>{dish.description}</p>
-            <img src={dish.image} alt={dish.name} />
-        </div>
-    );
-});
+import React from 'react';
+import Dish from './Dish';
+import dishesData from './StockDishes.json';
 
-export default dishList;
+function DishList({ dishes = dishesData }) {
+  return (
+    <div className="dish-list">
+      {dishes.map((dish) => (
+        <Dish key={dish.id} {...dish} />
+      ))}
+    </div>
+  );
+}
+
+export default DishList;

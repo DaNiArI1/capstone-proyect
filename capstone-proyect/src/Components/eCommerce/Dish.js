@@ -1,25 +1,19 @@
 import React from 'react';
 import DishCount from './DishCount';
-import dishesStock from './StockDishes';
 
-function dish ({ image,id ,stock, name, description, price }) {
-
-  const dish = [dish, setDish] = useState([])
-
-  useEffect(() => {
-    setDish(dishesStock)
-  }, [])
-
-
+/**
+ * Displays a single dish information card.
+ */
+function Dish({ image, id, stock, name, description, price }) {
   return (
     <div className="dish-card">
-      <img src={dish.image} alt={dish.name} />
-      <h3>{dish.name}</h3>
-      <p>{dish.description}</p>
-      <p>Price: ${dish.price}</p>
-      <DishCount />
+      <img src={image} alt={name} />
+      <h3>{name}</h3>
+      <p>{description}</p>
+      <p>Price: ${price}</p>
+      <DishCount stock={stock} />
     </div>
   );
-};
+}
 
 export default Dish;
